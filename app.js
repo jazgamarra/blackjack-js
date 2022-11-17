@@ -1,3 +1,9 @@
+/** Blackjack 
+ * 17/11/2022
+ * Jazmin Gamarra 
+ * @jazgamarra;  
+ */
+
 let deck = []; 
 const tipos = ['C', 'D', 'H', 'S']; 
 const especiales = ['A', 'J', 'Q', 'K']; 
@@ -12,7 +18,7 @@ const puntajeEnPantalla = document.querySelectorAll('small');
 const cartasJugador = document.querySelector('#jugador-cartas')
 const cartasComputadora = document.querySelector('#computadora-cartas')
 
-/* Crear un deck */
+/* Crear un deck: Genera un mazo de cartas y lo mezcla */
 const crearDeck = () => {
     for (let i = 2; i<=10; i++) {
         for (let tipo of tipos) {
@@ -29,7 +35,7 @@ const crearDeck = () => {
     return deck; 
 }
 
-/* Pedir una carta */ 
+/* Pedir una carta: elimina y devuelve la ultima carta del mazo  */ 
 const pedirCarta = () => {
     // Valido que el array no este vacio 
     if (deck.length == 0) {
@@ -41,7 +47,9 @@ const pedirCarta = () => {
     return cartaEliminada;
 }
 
-/* Calcular el valor de la carta */ 
+/* Calcular el valor de la carta: Si la primera parte es un numero, equivale al valor. 
+    Si es una letra, depende de que letra sea  */ 
+
 /*let puntos = 0; 
 if (isNaN(valor)) {
     puntos = (valor === 'A') ? 11 : 10; 
@@ -52,9 +60,6 @@ if (isNaN(valor)) {
 const valorCarta = (carta) => {
     // Extraigo la primera parte de la carta 
     const valor = carta.substring(0, carta.length-1); 
-
-    /* Si la primera parte es un numero, equivale al valor. 
-    Si es una letra, depende de que letra sea */
 
     let puntos = (isNaN(valor)) ? 
                  ((valor === 'A') ? 11 : 10) :  
