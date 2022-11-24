@@ -1,15 +1,12 @@
 # blackjack-js 
 
-## Tecnologias. 
+little website i did while learning Javascript and DOM manipulation, featuring the game 'BlackJack'
+
+## Technologies. 
 - Html 
 - Css 
 - Javascript 
 
-## Instalacion 
-- Clonar el repositorio. 
-- Abrir el archivo `index.html`
 
 
-
-
-Jazmin Gamarra, noviembre 2022
+Jazmin Gamarra, 17 de noviembre 2022
