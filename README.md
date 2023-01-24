@@ -9,4 +9,4 @@ little website i did while learning Javascript and DOM manipulation, featuring t
 
 
 
-Jazmin Gamarra, 17 de noviembre 2022
+jazgamarra @ 17/11/2022
