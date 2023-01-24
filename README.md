@@ -1,6 +1,5 @@
-# blackjack-js 
-
-little website i did while learning Javascript and DOM manipulation, featuring the game 'BlackJack'
+# BLACKJACK JS 
+Webpage i did while learning Javascript and DOM manipulation, featuring the game 'BlackJack'
 
 ## Technologies. 
 - Html 
